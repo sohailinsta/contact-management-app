@@ -82,5 +82,5 @@ This is a contact management application created with passion by Sohail Khan, a 
 1. Name: Sohail Khan
 2. Role: Frontend Developer
 3. Skills: HTML, CSS, JavaScript, React, Nextjs, Bootstrap, Material-UI, UI/UX developer, tailwind css etc
-4. Github: sohailkhan.dev
-5. LinkedIn: linkedin.com/in/sohail-khan
+4. Github:(https://github.com/sohailinsta?tab=repositories)
+5. LinkedIn: https://www.linkedin.com/in/sohail-khan-617a40166/
