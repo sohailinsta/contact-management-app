@@ -79,8 +79,8 @@ Tailwind CSS for styling the application.
 This is a contact management application created with passion by Sohail Khan, a highly skilled and experienced frontend developer. Sohail has a strong background in web development and a deep understanding of frontend technologies, making him an expert in crafting intuitive and user-friendly interfaces.
 
 # Developer Profile
-Name: Sohail Khan
-Role: Frontend Developer
-Skills: HTML, CSS, JavaScript, React, Nextjs, Bootstrap, Material-UI, UI/UX developer, tailwind css etc
-Github: sohailkhan.dev
-LinkedIn: linkedin.com/in/sohail-khan
+1. Name: Sohail Khan
+2. Role: Frontend Developer
+3. Skills: HTML, CSS, JavaScript, React, Nextjs, Bootstrap, Material-UI, UI/UX developer, tailwind css etc
+4. Github: sohailkhan.dev
+5. LinkedIn: linkedin.com/in/sohail-khan
