@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { ContactList } from './components/ContactList';
+import { ContactDetails } from './components/ContactDetails';
+import { AddContact } from './components/AddContact';
+import { EditContact } from './components/EditContact';
+import { Sidebar } from './components/Sidebar';
+import { Chart } from './components/Chart';
+import { Map } from './components/Map';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="grid grid-cols-12 min-h-screen">
+        <div className="col-span-2 flex flex-col items-center md:bg-gray-200 bg-white p-4">
+          <Sidebar />
+        </div>
+        <div className="col-span-10 p-4">
+          <Routes>
+            <Route path="/" element={<ContactList />} />
+            <Route path="/add" element={<AddContact />} />
+            <Route path="/contact/:id" element={<ContactDetails />} />
+            <Route path="/contact/:id/edit" element={<EditContact />} /> 
+            <Route path="/chart" element={<Chart />} /> 
+            <Route path="/map" element={<Map />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
