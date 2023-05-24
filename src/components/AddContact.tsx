@@ -4,6 +4,7 @@ import { addContact } from '../redux/contactSlice';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 export const AddContact = () => {
+  // Initialize state variables and hooks
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [id, setId] = useState('');
@@ -11,9 +12,11 @@ export const AddContact = () => {
   const [lname, setLname] = useState('');
   const [status,setStatus] = useState('');
 
+   // Handle form submission
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Create a new contact object with the entered values
     const newContact = {
       id,
       fname,
@@ -21,7 +24,7 @@ export const AddContact = () => {
       status,
     };
 
-    // Perform the necessary logic to add the new contact
+    // Dispatch an action to add the new contact using Redux
     dispatch(addContact(newContact));
 
     // Reset form fields
@@ -30,9 +33,11 @@ export const AddContact = () => {
     setLname('');
     setStatus('');
 
+    // Navigate back to the home page
     navigate('/');
   };
 
+  // Render the component
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4 text-center">Add Contact</h1>

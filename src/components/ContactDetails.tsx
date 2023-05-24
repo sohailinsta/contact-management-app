@@ -19,6 +19,7 @@ export const ContactDetails = () => {
 
   const handleDelete = () => {
     if (id) {
+      // Dispatch the deleteContact action to remove the contact from Redux store
       dispatch(deleteContact(id));
     }
     navigate("/");

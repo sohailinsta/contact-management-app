@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
+// Define the Contact type
 interface Contact {
   id: number;
   fname: string;
@@ -9,12 +10,14 @@ interface Contact {
   status: string;
 }
 
+// Define the RootState type
 interface RootState {
   contacts: Contact[];
   // ... other state properties
 }
 
 export const ContactList = () => {
+  // Retrieve the contacts from the Redux store
   const contacts = useSelector((state: RootState) => state.contacts);
 
   console.log(contacts); // Check the contact details in the browser console

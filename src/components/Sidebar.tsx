@@ -2,14 +2,17 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
+  // State variables for menu and popup open/close
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
+  // Toggle menu and popup
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
     setIsPopupOpen((prevState) => !prevState);
   };
 
+  // Close popup and menu
   const closePopup = () => {
     setIsPopupOpen(false);
     setIsMenuOpen(false);
